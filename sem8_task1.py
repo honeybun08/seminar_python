@@ -24,34 +24,38 @@
 # Васильев Тимур Савельевич 59(8550)298-23-76
 # Устинова Екатерина Романовна 0(338)398-00-68
 # Маркова Александра Михайловна 138(1442)711-95-96
-#  Маркова Александра Михайловна 138(1442)711-95-96
+# Маркова Александра Михайловна 138(1442)711-95-96
 # Лазарев Лев Матвеевич 811(53)357-30-69
 # Ермолова Яна Александровна 627(32)374-37-03
 # Борисов Роберт Константинович 020(56)190-83-15
 # Филатов Глеб Константинович 8(55)880-25-45
 
 
-# from Interface import *
-# from WorkWithFile import *
+from Interface import *
+from WorkWithFile import *
 
-# while True:
-#     interface()
-#     command = int(input('Введите команду: '))
-#     if command==1:
-#         person = input('Введите данные пользователя: ')
-#         add_person(person)
-#     elif command==2:
-#         show_all()
-#     elif command==3:
-#         name = input('Введите элемент(фамилию человека) для поиска: ')
-#         search_element(name)
-#     # elif command ==4:
-#     #     # data_to_edit = input('Введите элемент(фамилию человека) для поиска: ') 
-#     #     change(data_to_edit)
-#     elif command == 5:
-#         break
-#     else:
-#         print('Ввод некорректен')
+while True:
+    interface()
+    command = int(input('Введите команду: '))
+    if command==1:
+        person = input('Введите данные пользователя(фамилию,имя,отчество,номер телефона через пробел): ')
+        add_person(person)
+    elif command==2:
+        show_all()
+    elif command==3:
+        name = input('Введите элемент(фамилию человека) для поиска: ')
+        search_element(name)
+    elif command ==4:
+        name = input('Введите элемент(фамиилию человека) для удаления: ')
+        delete_data_from_file(name)
+    elif command ==5:
+        old_name = input('Введите данные(фамилию) человека для изменения: ')
+        new_name = input('Введите новые данные: ')
+        change_data_in_file(old_name, new_name)
+    elif command == 6:
+        break
+    else:
+        print('Ввод некорректен')
 
     
 
