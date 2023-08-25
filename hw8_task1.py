@@ -13,35 +13,35 @@
 # Борисов Роберт Константинович 020(56)190-83-15
 # Филатов Глеб Константинович 8(55)880-25-45
 
-from Work_With_File import *
-from Interface_info import *
-import os
-import os.path
+# from Work_With_File import *
+# from Interface_info import *
+# import os
+# import os.path
 
 
-filepath = os.path.join("C:/Users/Lenovo/Desktop/GeekBrains/python_seminar",'Info_dict.txt')
+# filepath = os.path.join("C:/Users/Lenovo/Desktop/GeekBrains/python_seminar",'Info_dict.txt')
 
-# Функция для выбора функций
-def choose():
-    while True:
-        command = int(input('Введите операцию (1,2,3,4,5,6): '))
-        if command == 1:
-            return adding(
-                input('Введите Фамилию, Имя, Отчество и номер телефона человека через пробел: ').split())
-        if command == 2: 
-            return search_element(
-                input('Введите Фамилию человека, которого вы ищите: '))
-        if command == 3: 
-            return delete(
-                input('Введите Фамилию человека для удаления его данных: '))
-        if command == 4:
-            return change(
-                input('Введите Фамилию человека для замены его данных: '), 
-                input('Введите, что вы хотите изменить (1 - Фамилия, 2 - Имя, 3 - Отчество, 4 - Номер): ') , 
-                input('Введите новые данные: '))
-        if command == 5: 
-            return show_all() 
-        if command == 6:
-            break
-        else:
-            print('Неккоректный ввод')
+# # Функция для выбора функций
+# def choose():
+#     while True:
+#         command = int(input('Введите операцию (1,2,3,4,5,6): '))
+#         if command == 1:
+#             return adding(
+#                 input('Введите Фамилию, Имя, Отчество и номер телефона человека через пробел: ').split())
+#         if command == 2: 
+#             return search_element(
+#                 input('Введите Фамилию человека, которого вы ищите: '))
+#         if command == 3: 
+#             return delete(
+#                 input('Введите Фамилию человека для удаления его данных: '))
+#         if command == 4:
+#             return change(
+#                 input('Введите Фамилию человека для замены его данных: '), 
+#                 input('Введите, что вы хотите изменить (1 - Фамилия, 2 - Имя, 3 - Отчество, 4 - Номер): ') , 
+#                 input('Введите новые данные: '))
+#         if command == 5: 
+#             return show_all() 
+#         if command == 6:
+#             break
+#         else:
+#             print('Неккоректный ввод')
